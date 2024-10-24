@@ -4,22 +4,11 @@ $inicial = $_POST["inicial"];
 $final = $_POST["final"];
 $num = 0;
 
-if ($inicial <= $final) 
+
+while ($num <= $final) 
 {
-    while ($num <= $final) 
-    {
-        $resultado = $inicial * $num;
-        echo "$inicial x $num = $resultado <br>";
-        $num += 1;
-    } 
+    $resultado = $inicial * $num;
+    echo "$inicial x $num = $resultado <br>";
+    $num += 1;
 } 
-else 
-{
-    while ($num >= $final) 
-    {
-        $resultado = $inicial * $num;
-        echo "$inicial x $num = $resultado <br>";
-        $num -= 1;
-    } 
-}
 ?>
